@@ -4,7 +4,7 @@ public class Project006 {
         Scanner input=new Scanner(System.in);
         System.out.println("enter an integer[1 to 7]:\n");
         int n =input.nextInt();
-        String day; //we have to define a string
+        String day; 
         if(n==1)
             day ="Saturday";
         else if (n==2)
