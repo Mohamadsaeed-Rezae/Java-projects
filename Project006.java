@@ -1,36 +1,37 @@
-import  java.util.*;
+import java.util.*;
 public class Project006 {
-    public static void main(String[]args){
+    public static void main(String[] args){
+        System.out.println("please enter  a number  from [1 to 7]:\n");
         Scanner input=new Scanner(System.in);
-        System.out.println("enter an integer[1 to 7]:\n");
         int n =input.nextInt();
-        String day; 
-        if(n==1)
-            day ="Saturday";
+        String day;
+        if (n==1)
+           day ="Saturday";
         else if (n==2)
-            day="sunday";
-
+            day="Sunday";
         else if (n==3)
-            day="monday";
-
+            day="Monday";
         else if (n==4)
-            day="tuesday";
-
+            day="Tuesday";
         else if (n==5)
-            day="wednesday";
-
+            day="Wednesday";
         else if (n==6)
-            day="thursday";
-
+            day="Thursday";
         else if (n==7)
-            day="friday";
+            day="Friday";
+        else
+            day="";
+        if (!day.isEmpty())
+        System.out.format("#%d is %s",n,day);
+        else{
+            System.out.format("%d you have entered an invalid number",n);
+         }
+     }
 
-        else day="";
-        if (day!=""){
-            System.out.format("the day #%d is :%s",n,day);
-        }else {
-           System.out.println("you have entered an invalid number.\n");
-        }
+    }
+
+
+
 
 
     }
