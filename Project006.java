@@ -21,8 +21,9 @@ public class Project006 {
             day="Friday";
         else
             day="";
-        if (!day.isEmpty())
-        System.out.format("#%d is %s",n,day);
+        if (!day.isEmpty()) {
+            System.out.format("#%d in week is %s", n, day);
+        }
         else{
             System.out.format("%d you have entered an invalid number",n);
          }
